@@ -3,7 +3,6 @@
     margin: 0px;
     box-sizing: border-box;
     color: white;
-    
 }
 
 html{
@@ -17,13 +16,12 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 nav{
     position: absolute;
     top: 13%;
-    left: 10%;
+    left: 7%;
     font-size: 6rem;
     padding: 0.5rem;
     cursor: pointer;
@@ -40,9 +38,7 @@ form{
     border: 1px solid gray;
     border-radius: 3px;
     padding: 5px;
-    
 }
-
 
 input[type=password], input[type=text]{
     display: block;
@@ -53,8 +49,7 @@ input[type=password], input[type=text]{
     margin-top: 10px;
     color: black;
     width: 250px;
-    height: 2.8rem;
-    
+    height: 2.8rem;    
 }
 
 input[type=submit]{
@@ -68,12 +63,10 @@ input[type=submit]{
     margin-right: auto;
     font-size: 1.6rem;
     width: 250px;
-    
 }
 
 input[type=submit]:hover{
     color: darkgray;
-    
 }
 
 p{
@@ -107,3 +100,166 @@ h3{
     text-transform: uppercase;
     text-align: center;
 }
+
+/*menu*/
+ 
+.nav-menu{
+    list-style: none;
+    display: none;
+    background: #143947;
+}
+ 
+.nav-menu:target, .nav-menu.open{
+    display: block;
+}
+ 
+.nav-menu-item-link{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;    
+}
+
+.nav-menu-item-link:hover, .nav-menu-item-link:focus
+{
+    background: #143947;
+    color: darkgray;
+}
+ 
+.nav-menu-item + .nav-menu-item{
+    border-top: 1px #000 solid;
+}
+
+ul a{
+    text-decoration: none;
+    font-size: 3rem;
+}
+
+/*media menu*/
+
+@media screen and (min-width: 1000px) {
+    .nav-toggle{
+        display: none;
+    }
+ 
+    .nav-menu{
+        display: table;
+        background: none;
+    }
+ 
+    .nav-menu-item{
+        display: table-cell;  
+    }
+    
+    .nav-menu-item + .nav-menu-item{
+        border-left: 1px #000 solid;
+        border-top: none;       
+    }
+
+}
+
+/* media - responsive */
+
+@media (orientation: portrait) {
+   header{
+        transform: rotate(-5deg);
+    }
+    
+}
+@media (orientation: landscape) {
+    nav{
+        top: 19%;
+        left: 10%;
+    }
+}
+    
+@media (min-width: 530px) {
+      
+}    
+
+@media (min-width: 530px) and (orientation: portrait) {
+    
+}
+
+
+@media (min-width: 768px) {
+    
+    
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+    nav{
+        left: 20%;
+        top: 15%;
+        font-size: 7.6rem;
+    }
+    header{
+        top: 5%;
+        font-size: 2.4rem;
+    }
+    footer{
+        font-size: 3rem;
+        bottom: 4%;
+    }
+    form{
+        
+    }
+    input[type=password], input[type=text]{
+        width: 340px;
+        padding: 5px;
+        font-size: 2rem;
+        margin: 15px;
+        height: 4rem;
+    }
+    input[type=submit]{
+        width: 340px;
+        padding: 5px;
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+     nav{
+        left: 25%;
+        top: 18%;
+        font-size: 8rem;
+    }
+    header{
+        top: 6%;
+        font-size: 3.2rem;
+    }
+    footer{
+        font-size: 5.2rem;
+        bottom: 6%;
+    }
+    input[type=password], input[type=text]{
+        width: 420px;
+        padding: 6px;
+        font-size: 3rem;
+        margin: 19px;
+        height: 5.2rem;
+    }
+    input[type=submit]{
+        width: 420px;
+        padding: 6px;
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+@media (min-width: 1280px) and (orientation: portrait) {
+    
+}
+
+@media (max-width: 320px) {
+    
+}
+
+

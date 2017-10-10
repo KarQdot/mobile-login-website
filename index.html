@@ -11,16 +11,33 @@
 <body>
       <header>
         <h1>KarQ.</h1>
-        <h3>Life,passion,programming..(.)</h3>
+        <h3>Life, passion, programming..(.)</h3>
       </header>
    
-       <nav><i class="fa fa-bars" aria-hidden="true"></i></nav>
+        <nav>
+            <a href="#menu" class="nav-toggle" title="Rozwiń/zwiń menu"><i class="fa fa-bars" aria-hidden="true"></i></a> 
+                <ul class="nav-menu" id="menu">
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-item-link">Strona Głowna</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-item-link">O nas</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-item-link">Kontakt</a>
+                    </li>
+                    <li class="nav-menu-item">
+                        <a href="#" class="nav-menu-item-link">Serwis</a>
+                    </li>
+                </ul>
+        </nav>
+        
         <form>
-        <input type="text" placeholder="Podaj email" name="email">
-        <input type="password" placeholder="Wpisz hasło" name="haslo">
-        <input type="submit" value="Zaloguj się">
-        <p>lub</p>
-        <input type="submit" value="Zarejestruj się">
+            <input type="text" placeholder="Podaj email" name="email">
+            <input type="password" placeholder="Wpisz hasło" name="haslo">
+            <input type="submit" value="Zaloguj się">
+            <p>lub</p>
+            <input type="submit" value="Zarejestruj się">
         </form> 
   
     <footer>
@@ -29,5 +46,20 @@
         <a href="https://plus.google.com/" target="_blank"><i class="icon-googleplus"></i></a>
         <a href="https://www.facebook.com/KarQ-1111572502312527/" target="_blank"><i class="icon-facebook"></i></a>
     </footer>
+    
+    <script>(function(togglers)
+            {
+                [].forEach.call(togglers, function(toggler)
+                {
+                    toggler.addEventListener('click', function(e)
+                    {
+                        e.preventDefault();
+ 
+                        document.getElementById(toggler.getAttribute('href').substring(1)).classList.toggle('open'); //jeśli potrzebujemy wsparcia od IE 9, nie 10, to warto spojrzeć tutaj: http://youmightnotneedjquery.com/#toggle_class
+                    });
+                });
+            }(document.querySelectorAll('.fa fa-bars')));
+    </script>
+    
 </body>
 </html>
