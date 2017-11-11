@@ -1,0 +1,120 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+form{
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 5px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+}
+
+input{
+    border: 1px solid gray;
+    font-size: 1.3rem;
+    padding: 4px;
+    margin: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form p{
+    text-align: center;
+    padding: 3px;
+}
+
+label{
+    text-align: center;
+}
+
+main {
+    height: 100vh;
+    background: gray;
+    margin-top: 100vh;
+    z-index: 2;
+    position: relative;
+}
+
+.wrapper{
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+li {
+    color: aqua;
+    display: inline-block;
+    font-size: 45px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-shadow: 0 0 30px white, 0 0 10px aqua;
+    transition: opacity 0.6s;
+}
+
+li:nth-child(3) {
+    transform: rotate(15deg) translateY(4px);
+    animation: neon 2s infinite;
+}
+
+li.off {
+    opacity: 0;
+    animation-play-state: paused;
+}
+
+@keyframes neon {
+    0% { 
+        opacity: 0;
+    }
+    5% { 
+        opacity: 1;
+    }
+    20% {
+        opacity: 0.5;    
+    }
+    30% {
+        opacity: 0.5;
+    }
+}
+
+button {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    background-color: white;
+    color: black;
+    font-size: 1.5rem;
+    border: 2px solid red;
+    border-radius: 7%;
+}
+
+ul{
+    text-align: center;
+    line-height: 60vh;
+    transform: rotate(-20deg);
+}
+
+
+.wrapper p{
+    color: white;
+    text-align: center;
+    line-height: 40vh;
+}

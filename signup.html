@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="pl">
+	<head>
+		<title>Page Title</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0">
+		<link rel="stylesheet" href="style1.css" type="text/css">
+	
+	</head>
+
+	<body>
+    <div class="wrapper">   
+          <button>WYŁĄCZ</button>
+       <ul>
+           <li>K</li>
+           <li>A</li>
+           <li>R</li>
+           <li>Q</li>
+           <li>.</li>
+       </ul>
+       <p>Przewiń w doł</p>
+   
+        <script>
+        var button = document.querySelector("button");
+            button.addEventListener("click", function(){
+                if(button.textContent == "WŁĄCZ"){
+                    button.textContent = "WYŁĄCZ";
+                }
+                else{button.textContent = "WŁĄCZ"}
+
+                const letters = document.querySelectorAll("li");
+                for(var i = 0; letters.length > i; i++){
+                    letters[i].classList.toggle("off")
+                }
+            });
+        </script>
+    </div>  
+    <main>
+         <header>
+        <h1>KarQ.</h1>
+        <h3>Life, passion, programming..(.)</h3>
+      </header>
+    
+        <form>
+            <p>Zapisz się</p>
+            <p>E-mail:</p>
+            <input type="text" placeholder="Podaj email" name="email">
+            <p>Login:</p>
+            <input type="text" placeholder="Podaj login" name="login">
+            <p>Podaj hasło:</p>
+            <input type="password" placeholder="Wpisz hasło" name="haslo">
+            <p>Powtorz hasło:</p>
+            <input type="password" placeholder="Powtorz haslo" name="haslo1">
+            <p>Regulamin</p>
+            <input type="checkbox">
+            <input type="submit" value="Zarejestruj się">
+        </form> 
+    </main>
+        
+	</body>
+</html>

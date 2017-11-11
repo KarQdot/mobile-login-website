@@ -55,7 +55,7 @@
                     {
                         e.preventDefault();
  
-                        document.getElementById(toggler.getAttribute('href').substring(1)).classList.toggle('open'); //jeśli potrzebujemy wsparcia od IE 9, nie 10, to warto spojrzeć tutaj: http://youmightnotneedjquery.com/#toggle_class
+                        document.getElementById(toggler.getAttribute('href').substring(1)).classList.toggle('open'); 
                     });
                 });
             }(document.querySelectorAll('.fa fa-bars')));

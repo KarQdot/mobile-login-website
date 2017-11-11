@@ -76,6 +76,7 @@ p{
 }
 
 footer{
+    border-top: 2px solid white;
     text-transform: uppercase;
     position: absolute;
     bottom: 2%;
@@ -117,7 +118,7 @@ h3{
     display: block;
     height: 40px;
     line-height: 40px;
-    padding: 0 20px;    
+    padding: 0 20px; 
 }
 
 .nav-menu-item-link:hover, .nav-menu-item-link:focus
@@ -172,20 +173,45 @@ ul a{
         left: 10%;
     }
 }
-    
-@media (min-width: 530px) {
-      
-}    
+     
 
-@media (min-width: 530px) and (orientation: portrait) {
-    
+@media (min-width: 360px) and (orientation: portrait) {
+   nav{
+        left: 5%;
+        top: 15%;
+        font-size: 5.6rem;
+    }
+    header{
+        top: 1%;
+        font-size: 2rem;
+    }
+    footer{
+        font-size: 2.8rem;
+        bottom: 4%;
+    }
+    input[type=password], input[type=text]{
+        width: 280px;
+        padding: 4px;
+        font-size: 2rem;
+        margin: 15px;
+        height: 2.9rem;
+    }
+    input[type=submit]{
+        width: 280px;
+        padding: 4px;
+        font-size: 2rem;
+    }
 }
 
 
-@media (min-width: 768px) {
-    
-    
+@media (min-width: 412px) {
+    nav{
+        left: 9%;
+        top: 15%;
+        font-size: 5.6rem;
+    }
 }
+
 
 @media (min-width: 768px) and (orientation: portrait) {
     nav{
@@ -201,9 +227,6 @@ ul a{
         font-size: 3rem;
         bottom: 4%;
     }
-    form{
-        
-    }
     input[type=password], input[type=text]{
         width: 340px;
         padding: 5px;
@@ -218,9 +241,6 @@ ul a{
     }
 }
 
-@media (min-width: 1024px) {
-    
-}
 
 @media (min-width: 1024px) and (orientation: portrait) {
      nav{
@@ -250,16 +270,5 @@ ul a{
     }
 }
 
-@media (min-width: 1280px) {
-    
-}
-
-@media (min-width: 1280px) and (orientation: portrait) {
-    
-}
-
-@media (max-width: 320px) {
-    
-}
 
 
